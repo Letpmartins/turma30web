@@ -1,0 +1,60 @@
+/*Home*/
+
+#menu li {
+    display: inline;
+    padding: 20px;
+    font-size: 16pt;
+}
+
+#menu li a {
+    text-decoration: none;
+    color: black;
+}
+#menu li a:hover {
+    color: gray;
+}
+
+.container {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.p-30 {
+    padding: 30px;
+}
+
+.center {
+    text-align: center;
+
+}
+
+.justify {
+    text-align: justify;
+}
+
+.br-50 {
+    border-radius: 50%;
+}
+
+.wh-400 {
+    width: 400px;
+    height: 400px;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+}
+
+
+/*Contato*/
+
+.mf-50 {
+    margin-left: 50px;
+}
