@@ -1,260 +1,306 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<head>
-  <!-- Meta tags Obrigatórias -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-  <title>Landing Page</title>
-</head>
+    <title>Landing Page</title>
+  </head>
 
-<body>
-  <!--Navbar-->
-  <nav class="navbar navbar-expand-lg navbar-light">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(Página atual)</span></a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Destaques</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Preços</a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Desativado</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <!--/Navbar-->
+  <body class="bg-off-white">
+    <!--Navbar-->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark-blue">
+      <a class="navbar-brand text-white" href="#"> <img src="./assets/img/icons/stem.png" class="mr-2" width="30px" height="30px" alt="STEM"> STEM Classes</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link text-white" href="#sobre">Sobre</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link text-white" href="#depoimentos">Nossos alunos</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link text-white" href="#cursos">Cursos</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link text-white" href="#contatos">Contatos</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!--/Navbar-->
 
-  <div class="container-fluid">
-    <div class="row-12">
-      <!--Carousel-->
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="d-block w-100" src="./assets/img/carousel/pexels-chokniti-khongchum-2280571.jpg"
-              alt="Primeiro Slide">
+    <div class="container-fluid">
+      <div class="row-12">
+        <!--Carousel-->
+        <div id="carouselExampleIndicators" class="carousel slide mt-10" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block w-100" src="./assets/img/carousel/slider1.jpg"
+                alt="Primeiro Slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="./assets/img/carousel/slider2.jpg"
+                alt="Segundo Slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block w-100" src="./assets/img/carousel/slider3.jpg"
+                alt="Terceiro Slide">
+            </div>
           </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="./assets/img/carousel/pexels-jeshootscom-714698.jpg"
-              alt="Segundo Slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block w-100" src="./assets/img/carousel/pexels-jorge-jesus-614117.jpg"
-              alt="Terceiro Slide">
-          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+          </a>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Anterior</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Próximo</span>
-        </a>
+        <!--/Carousel-->
       </div>
-      <!--/Carousel-->
-    </div>
 
-    <!--Texto + imagem-->
-    <div class="row d-flex m-5">
-      <div class="col-md text-center">
-        <h3>Sobre nós</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras viverra arcu sed sapien
-          convallis, sit amet tincidunt mauris iaculis. Maecenas semper, lectus et elementum suscipit, ante quam vulputate mi, 
-          id suscipit sem ex at orci.
-        </p>
-      </div>
-      <div class="col-md text-center">
-        <h3>Nossa missão</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras viverra arcu sed sapien
-          convallis, sit amet tincidunt mauris iaculis. Maecenas semper, lectus et elementum suscipit, ante quam vulputate mi, 
-          id suscipit sem ex at orci.
-        </p>
-      </div>
-      <div class="col-md text-center">
-        <h3>Nossos alunos</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras viverra arcu sed sapien
-          convallis, sit amet tincidunt mauris iaculis. Maecenas semper, lectus et elementum suscipit, ante quam vulputate mi, 
-          id suscipit sem ex at orci.
-        </p>
-      </div>
-    </div>
-    <!--Jumbotron-->
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container">
-        <h1 class="display-4">Nossos cursos</h1>
-        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras viverra arcu sed sapien
-          convallis, sit amet tincidunt mauris iaculis.</p>
-      </div>
-    </div>
-    <!--/Jumbotron-->
-    
-    <!--Cards-->
-    <div class="card-columns">
-      <div class="card">
-        <img class="card-img-top" src=".../100px160/" alt="Imagem de capa do card">
-        <div class="card-body">
-          <h5 class="card-title">Título do card que quebra em uma nova linha</h5>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras viverra arcu sed sapien
+      <!--Texto + imagem-->
+      <div class="row d-flex m-5" id="sobre">
+        <div class="col-md-4 text-center">
+          <h3>Sobre nós</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras viverra arcu sed sapien
             convallis, sit amet tincidunt mauris iaculis. Maecenas semper, lectus et elementum suscipit, ante quam vulputate mi, 
             id suscipit sem ex at orci.
-            Nulla porttitor hendrerit eros. Donec sodales interdum velit. Suspendisse consequat porttitor quam, ac
-            aliquet ligula.
-            Proin mollis aliquam condimentum. Sed accumsan est euismod, varius nulla sed, bibendum sapien. Sed malesuada
-            et ipsum molestie ullamcorper.
-            Praesent ut leo diam. Duis mattis eleifend tellus, at rutrum ante commodo vel. Sed tristique erat non
-            iaculis dignissim. Etiam aliquet euismod tempus.
-            In vitae turpis neque. </p>
+          </p>
+        </div>
+        <div class="col-md-4 text-center">
+          <h3>Nossa missão</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras viverra arcu sed sapien
+            convallis, sit amet tincidunt mauris iaculis. Maecenas semper, lectus et elementum suscipit, ante quam vulputate mi, 
+            id suscipit sem ex at orci.
+          </p>
+        </div>
+        <div class="col-md-4 text-center">
+          <h3>Nossos instrutores</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras viverra arcu sed sapien
+            convallis, sit amet tincidunt mauris iaculis. Maecenas semper, lectus et elementum suscipit, ante quam vulputate mi, 
+            id suscipit sem ex at orci.
+          </p>
         </div>
       </div>
-      <div class="card">
-        <img class="card-img-top" src=".../100px160/" alt="Imagem de capa do card">
-        <div class="card-body">
-          <h5 class="card-title">Título do card que quebra em uma nova linha</h5>
-          <p class="card-text">Aenean interdum lectus ac magna vestibulum sagittis. Ut nec congue nibh. Nunc sed feugiat sapien, 
-            ac molestie dolor. Nam lectus tortor, scelerisque vel est at, ultrices blandit sem. Fusce scelerisque, dui nec lacinia ullamcorper, 
-            diam tortor fermentum ipsum, eget laoreet est mi in dolor. Nulla id dui et mi facilisis cursus. Praesent ultrices malesuada mi et interdum. </p>
-        </div>
-      </div>
-      <div class="card">
-        <img class="card-img-top" src=".../100px160/" alt="Imagem de capa do card">
-        <div class="card-body">
-          <h5 class="card-title">Título do card que quebra em uma nova linha</h5>
-          <p class="card-text">Sed a consequat diam, eget sodales quam. Phasellus aliquet sagittis dignissim. Phasellus lacinia id erat at aliquet. 
-            Curabitur ullamcorper lorem pellentesque erat facilisis, ut facilisis mi pulvinar. In ligula mauris, dictum id lobortis quis, dictum vel dui. 
-            Sed efficitur fermentum ultrices. Proin tempus aliquet nulla, quis suscipit quam pretium ut. Aenean in odio ex. 
-            Fusce fringilla ex laoreet pharetra sodales. Nulla nec elit ut lectus ornare hendrerit et nec lectus. Curabitur euismod, 
-            libero eget ullamcorper congue, est felis mattis purus, ac feugiat mi arcu sed sem. Vivamus finibus mi quis urna pulvinar feugiat. 
-            Duis viverra mattis gravida. Quisque auctor tempus erat id bibendum. Donec varius tellus justo. </p>
-        </div>
-      </div>
-      <div class="card">
-        <img class="card-img-top" src=".../100px160/" alt="Imagem de capa do card">
-        <div class="card-body">
-          <h5 class="card-title">Título do card que quebra em uma nova linha</h5>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras viverra arcu sed sapien
-            convallis,
-            sit amet tincidunt mauris iaculis. Maecenas semper, lectus et elementum suscipit, ante quam vulputate mi, id
-            suscipit sem ex at orci.
-            Nulla porttitor hendrerit eros. Donec sodales interdum velit. Suspendisse consequat porttitor quam, ac
-            aliquet ligula.
-            Proin mollis aliquam condimentum. Sed accumsan est euismod, varius nulla sed, bibendum sapien. Sed malesuada
-            et ipsum molestie ullamcorper.
-            Praesent ut leo diam. Duis mattis eleifend tellus, at rutrum ante commodo vel. Sed tristique erat non
-            iaculis dignissim. Etiam aliquet euismod tempus.
-            In vitae turpis neque. .</p>
-        </div>
-      </div>
-      <div class="card">
-        <img class="card-img-top" src=".../100px160/" alt="Imagem de capa do card">
-        <div class="card-body">
-          <h5 class="card-title">Título do card que quebra em uma nova linha</h5>
-          <p class="card-text">Aliquam gravida, enim sed aliquet malesuada, tellus arcu fringilla dolor, et pulvinar ligula lorem at risus. 
-            Cras luctus commodo nulla sit amet mollis. Proin at mi viverra, porta quam in, ullamcorper metus. Donec rhoncus ut odio non molestie. 
-            Phasellus ut metus ex. Mauris sed tincidunt purus. Fusce libero enim, ultrices quis lacinia sed, vehicula at sapien. 
-            Aenean egestas commodo massa ultrices tincidunt. </p>
-        </div>
-      </div>
-      <div class="card">
-        <img class="card-img-top" src=".../100px160/" alt="Imagem de capa do card">
-        <div class="card-body">
-          <h5 class="card-title">Título do card que quebra em uma nova linha</h5>
-          <p class="card-text">Morbi quis urna pulvinar, lacinia eros luctus, rutrum nisl. Morbi sagittis odio non sagittis lacinia. 
-            Morbi consequat sit amet turpis ut malesuada. Aliquam pulvinar, dui sit amet cursus luctus, odio arcu cursus libero, nec luctus neque metus vitae arcu. 
-            Pellentesque vel nisi egestas lectus fermentum semper. Fusce accumsan dapibus neque vitae varius. Cras tempor ac nulla non sagittis. 
-            Pellentesque posuere commodo est ac ullamcorper. Duis a erat in neque suscipit pharetra. Suspendisse in arcu finibus enim pulvinar scelerisque a ut elit. 
-            Aliquam volutpat massa vitae dolor placerat laoreet. </p>
-        </div>
-      </div>
+      <!--/Texto + imagem-->
 
-
-    </div>
-    <!--/Cards-->
-    <!--Texto + vídeo-->
-    <!--Form + mapa-->
-    <!--Form-->
-    <div class="row mt-5">
-      <div class="col-6">
-        <form class="w-100">
-          <div class="form-group">
-            <label for="exampleFormControlInput1">Nome</label>
-            <input type="nome" class="form-control" id="exampleFormControlInput1" placeholder="Nome">
+      <!--Texto + vídeo-->
+      <div class="row mt-5 mr-3 ml-3" id="depoimentos">
+        <div class="col-md-6 text-center mb-5 p-5">
+          <h4>Depoimentos dos nossos alunos</h4>
+          <p class="p-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras viverra arcu sed sapien convallis, 
+            sit amet tincidunt mauris iaculis. Maecenas semper, lectus et elementum suscipit, ante quam vulputate mi, 
+            id suscipit sem ex at orci. Nulla porttitor hendrerit eros. Donec sodales interdum velit. Suspendisse consequat porttitor quam, 
+            ac aliquet ligula. Proin mollis aliquam condimentum. Sed accumsan est euismod, varius nulla sed, bibendum sapien. Sed malesuada 
+            et ipsum molestie ullamcorper. Praesent ut leo diam. Duis mattis eleifend tellus, at rutrum ante commodo vel. 
+            Sed tristique erat non iaculis dignissim. Etiam aliquet euismod tempus. In vitae turpis neque.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <div class="embed-responsive embed-responsive-16by9"> 
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/3ylOaK_S2rw" title="YouTube video player" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
-
-          <div class="form-group">
-            <label for="exampleFormControlInput1">Endereço de email</label>
-            <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="nome@exemplo.com">
-          </div>
-
-          <div class="form-group">
-            <label for="exampleFormControlTextarea1">Exemplo de textarea</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-          </div>
-
-          <div class="form-group d-flex justify-content-end mr-2">
-            <button class="btn btn-success">Enviar</button>
-          </div>
-        </form>
+        </div>
       </div>
-
-      <!--Mapa-->
-      <div class="col-6">
-        <iframe class="w-100"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.3666590898724!2d-46.664227484498475!3d-23.55527136725363
-                !2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce582da261e6b1%3A0x5ceb2e6bcbc1483b!2sPaulista!5e0!3m2!1spt-BR!2sbr!4v1632238630375!5m2!1spt-BR!2sbr"
-          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-      </div>
-    </div>
-
-    <hr>
-    <!--Footer-->
-    <footer>
+      <!--/Texto + vídeo-->
       
-    </footer>
-  </div>
+      <!--Jumbotron-->
+      <div class="jumbotron jumbotron-fluid bg-info mt-5">
+        <div class="container">
+          <h1 class="display-4">Conheça nossos cursos</h1>
+          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras viverra arcu sed sapien
+            convallis, sit amet tincidunt mauris iaculis.</p>
+        </div>
+      </div>
+      <!--/Jumbotron-->
+      
+      <!--Cards-->
+      <div class="card-columns" id="cursos">
+        <div class="card">
+          <img class="card-img-top" src="./assets/img/cards/chemistry.jpg" alt="Imagem de capa do card">
+          <div class="card-body">
+            <h5 class="card-title">Química</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras viverra arcu sed sapien
+              convallis, sit amet tincidunt mauris iaculis. Maecenas semper, lectus et elementum suscipit, ante quam vulputate mi, 
+              id suscipit sem ex at orci.
+              Nulla porttitor hendrerit eros. Donec sodales interdum velit. Suspendisse consequat porttitor quam, ac
+              aliquet ligula.
+              Proin mollis aliquam condimentum. Sed accumsan est euismod, varius nulla sed, bibendum sapien. Sed malesuada
+              et ipsum molestie ullamcorper.
+              Praesent ut leo diam. Duis mattis eleifend tellus, at rutrum ante commodo vel. Sed tristique erat non
+              iaculis dignissim. Etiam aliquet euismod tempus.
+              In vitae turpis neque. </p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" height="500px" src="./assets/img/cards/geology2.jpg" alt="Imagem de capa do card">
+          <div class="card-body">
+            <h5 class="card-title">Geologia</h5>
+            <p class="card-text">Aenean interdum lectus ac magna vestibulum sagittis. Ut nec congue nibh. Nunc sed feugiat sapien, 
+              ac molestie dolor. Nam lectus tortor, scelerisque vel est at, ultrices blandit sem. Fusce scelerisque, dui nec lacinia ullamcorper, 
+              diam tortor fermentum ipsum, eget laoreet est mi in dolor. Nulla id dui et mi facilisis cursus. Praesent ultrices malesuada mi et interdum. </p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="./assets/img/cards/math.jpg" alt="Imagem de capa do card">
+          <div class="card-body">
+            <h5 class="card-title">Matemática</h5>
+            <p class="card-text">Sed a consequat diam, eget sodales quam. Phasellus aliquet sagittis dignissim. Phasellus lacinia id erat at aliquet. 
+              Curabitur ullamcorper lorem pellentesque erat facilisis, ut facilisis mi pulvinar. In ligula mauris, dictum id lobortis quis, dictum vel dui. 
+              Sed efficitur fermentum ultrices. Proin tempus aliquet nulla, quis suscipit quam pretium ut. Aenean in odio ex. 
+              Fusce fringilla ex laoreet pharetra sodales. Nulla nec elit ut lectus ornare hendrerit et nec lectus. Curabitur euismod, 
+              libero eget ullamcorper congue, est felis mattis purus, ac feugiat mi arcu sed sem. Vivamus finibus mi quis urna pulvinar feugiat. 
+              Duis viverra mattis gravida. Quisque auctor tempus erat id bibendum. Donec varius tellus justo. </p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="./assets/img/cards/physics2.jpg" alt="Imagem de capa do card">
+          <div class="card-body">
+            <h5 class="card-title">Física</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras viverra arcu sed sapien
+              convallis,
+              sit amet tincidunt mauris iaculis. Maecenas semper, lectus et elementum suscipit, ante quam vulputate mi, id
+              suscipit sem ex at orci.
+              Nulla porttitor hendrerit eros. Donec sodales interdum velit. Suspendisse consequat porttitor quam, ac
+              aliquet ligula.
+              Proin mollis aliquam condimentum. Sed accumsan est euismod, varius nulla sed, bibendum sapien. Sed malesuada
+              et ipsum molestie ullamcorper.
+              Praesent ut leo diam. Duis mattis eleifend tellus, at rutrum ante commodo vel. Sed tristique erat non
+              iaculis dignissim. Etiam aliquet euismod tempus.
+              In vitae turpis neque. .</p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="./assets/img/cards/programming.jpg" alt="Imagem de capa do card">
+          <div class="card-body">
+            <h5 class="card-title">Programação</h5>
+            <p class="card-text">Aliquam gravida, enim sed aliquet malesuada, tellus arcu fringilla dolor, et pulvinar ligula lorem at risus. 
+              Cras luctus commodo nulla sit amet mollis. Proin at mi viverra, porta quam in, ullamcorper metus. Donec rhoncus ut odio non molestie. 
+              Phasellus ut metus ex. Mauris sed tincidunt purus. Fusce libero enim, ultrices quis lacinia sed, vehicula at sapien. 
+              Aenean egestas commodo massa ultrices tincidunt. </p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="./assets/img/cards/robotic.jpg" alt="Imagem de capa do card">
+          <div class="card-body">
+            <h5 class="card-title">Robótica</h5>
+            <p class="card-text">Morbi quis urna pulvinar, lacinia eros luctus, rutrum nisl. Morbi sagittis odio non sagittis lacinia. 
+              Morbi consequat sit amet turpis ut malesuada. Aliquam pulvinar, dui sit amet cursus luctus, odio arcu cursus libero, nec luctus neque metus vitae arcu. 
+              Pellentesque vel nisi egestas lectus fermentum semper. Fusce accumsan dapibus neque vitae varius. Cras tempor ac nulla non sagittis. 
+              Pellentesque posuere commodo est ac ullamcorper. Duis a erat in neque suscipit pharetra. Suspendisse in arcu finibus enim pulvinar scelerisque a ut elit. 
+              Aliquam volutpat massa vitae dolor placerat laoreet. </p>
+          </div>
+        </div>
+      </div>
+      <!--/Cards-->
+
+      
+      
+      <!--Form-->
+      <div class="row mt-5 mr-3 ml-3" id="contatos">
+        <div class="col-md-6">
+          <h5 class="text-center">Entre em contato conosco</h5>
+          <form class="w-100">
+            <div class="form-group">
+              <label for="nome">Nome</label>
+              <input type="nome" class="form-control" id="nome" placeholder="Nome" onkeyup="validaNome()">
+              <div id="txtNome"></div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com" onkeyup={validaEmail()}>
+              <div id="txtEmail"></div>
+            </div>
+
+            <div class="form-group">
+              <label for="mensagem">Mande sua mensagem</label>
+              <textarea class="form-control" id="mensagem" rows="5" onkeyup={validaMensagem()}></textarea>
+              <div id="txtMensagem"></div>
+            </div>
+
+            <div class="form-group d-flex justify-content-end mr-2">
+              <button class="btn btn-info" onclick={enviar()}>Enviar</button>
+            </div>
+          </form>
+        </div>
+        <!--/Form-->
+
+        <!--Mapa-->
+        <div class="col-md-6 text-center">
+          <h5>Nosso endereço</h5>
+          <div class="embed-responsive embed-responsive-16by9"> 
+            <iframe class="w-100 p-3"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.3666590898724!2d-46.664227484498475!3d-23.55527136725363
+                  !2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce582da261e6b1%3A0x5ceb2e6bcbc1483b!2sPaulista!5e0!3m2!1spt-BR!2sbr!4v1632238630375!5m2!1spt-BR!2sbr"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+        <!--/Mapa-->
+      </div>
+
+      <hr>
+      <!--Footer-->
+      <footer>
+        <div class="row" id="redes">
+          <div class="col-md-12 d-flex justify-content-center">
+              <a href="https://www.linkedin.com" target="_blank">
+                  <img class="icon m-3" src="./assets/img/icons/linkedin.png" alt="ícone do linkedin">
+              </a>
+              <a href="https://www.instagram.com" target="_blank">
+                  <img class="icon m-3" src="./assets/img/icons/instagram.png" alt="ícone do instagram">
+              </a>
+              <a href="http://facebook.com" target="_blank">
+                <img class="icon m-3" src="./assets/img/icons/facebook.png" alt="ícone do facebook">
+              </a>
+            </div>
+          <div class="col-md-12 text-center">
+            <p>
+              Todos os direitos reservados: STEM Classes &copy;
+            </p>
+          </div>
+          </div>
+        </div>
+      </footer>
+      <!--/Footer-->
+    </div>
 
 
-
-
-
-  <!-- JavaScript (Opcional) -->
-  <script src="./assets/js/script.js"></script>
-  <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script>
-</body>
+    <!-- JavaScript (Opcional) -->
+    <script src="./assets/js/script.js"></script>
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"></script>
+  </body>
 
 </html>
-
-
-<!-- <a href="#tabmotora" data-toggle="tab" class="btn btn-default">LEE MÁS</a> : para navegar peças tags- data-toggle="tab"-->
