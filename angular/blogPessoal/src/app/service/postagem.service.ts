@@ -18,7 +18,7 @@ export class PostagemService {
   }
 
   getByIdPostagem(id: number): Observable<Postagem>{
-    return this.http.get<Postagem>(`https://generationblogpessoalleticia.herokuapp.com/postagens${id}`, this.token)
+    return this.http.get<Postagem>(`https://generationblogpessoalleticia.herokuapp.com/postagens/${id}`, this.token)
   }
 
   postPostagem(postagem: Postagem): Observable<Postagem>{
