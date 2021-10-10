@@ -21,8 +21,13 @@ export class TemaComponent implements OnInit {
 
   ngOnInit() {
     if(environment.token == ''){
-      this.alertas.showAlertInfo("Sua seção expirou.")
+      this.alertas.showAlertInfo("Sua sessão expirou.")
       this.router.navigate(["/entrar"])
+    }
+
+    if(environment.tipo != 'adm'){
+      this.alertas.showAlertInfo("Apenas administradores podem acessar essa página.")
+      this.router.navigate(["/inicio"])
     }
 
     this.findAllTemas()

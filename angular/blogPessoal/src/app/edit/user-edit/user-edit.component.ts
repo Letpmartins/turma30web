@@ -27,7 +27,7 @@ export class UserEditComponent implements OnInit {
     window.scroll(0, 0)
 
     if (environment.token == '') {
-      this.alertas.showAlertInfo("Sua seção expirou.")
+      this.alertas.showAlertInfo("Sua sessão expirou.")
       this.router.navigate(["/entrar"])
     }
 

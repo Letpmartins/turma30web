@@ -35,7 +35,7 @@ export class InicioComponent implements OnInit {
     private router: Router, 
     private postagemService: PostagemService, 
     private temaService: TemaService,
-    private authService: AuthService,
+    public authService: AuthService,
     private alertas: AlertasService) { }
 
   ngOnInit(){
@@ -43,7 +43,7 @@ export class InicioComponent implements OnInit {
     window.scroll(0,0)
 
     if(environment.token == ''){
-      this.alertas.showAlertInfo("Sua seção expirou.")
+      this.alertas.showAlertInfo("Sua sessão expirou.")
       this.router.navigate(["/entrar"])
     }
 
