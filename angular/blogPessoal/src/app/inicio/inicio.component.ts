@@ -19,6 +19,9 @@ export class InicioComponent implements OnInit {
   postagem: Postagem  = new Postagem()
   listaPostagens: Postagem[]
 
+  key = 'date'
+  reverse = true
+
   tema: Tema
   listaTemas: Tema[]
   idTema: number
